@@ -692,6 +692,9 @@ $(function() {
 
 function sendMail(e){
   e.preventDefault()
+  if(document.getElementById("name").value || document.getElementById("email").value || document.getElementById("message").value === "" ){
+    alert("kindly fill all the required fields")
+  }else{
   var params = {
         name:document.getElementById("name").value , 
         email:document.getElementById("email").value ,
@@ -714,7 +717,7 @@ emailjs.send(serviceID,templateID,params)
          alert("Message sent successfully"); 
 
 }).catch((error) => console.log(error));
-
+}
 }
 
 

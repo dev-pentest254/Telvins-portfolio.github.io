@@ -723,7 +723,7 @@ function scrollToBottotm (){
  const element = document.getElementById("preloader");
 try {
   element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
-  alert("successfull")
+  
 } catch (error) {
   alert("an error occured")
 }

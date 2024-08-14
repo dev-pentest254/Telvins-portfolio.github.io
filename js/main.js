@@ -1,13 +1,4 @@
-/* -------------------------------------------
-
-Name: 		Arter
-Version:  1.0
-Author:		Nazar Miller (millerDigitalDesign)
-Portfolio:  https://themeforest.net/user/millerdigitaldesign/portfolio?ref=MillerDigitalDesign
-
-p.s. I am available for Freelance hire (UI design, web development). mail: miller.themes@gmail.com
-
-------------------------------------------- */
+console.log("testing")
 $(function() {
 
   "use strict";
@@ -723,13 +714,27 @@ emailjs.send(serviceID,templateID,params)
 
 
 function scrollToBottotm (){
- const element = document.getElementById("preloader");
+ const element = document.getElementById("random");
+//  const element = document.getElementById("preloader");
 try {
-  element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+  // element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+  //  element.scrollIntoView();
+
+  element.scroll({
+  top: 0,
+  left: 0,
+  behavior: "smooth",
+  });
+
+   console.log("all good!")
+   console.log(element)
   
 } catch (error) {
   alert("an error occured")
+  
 }
+
+
  
 
 

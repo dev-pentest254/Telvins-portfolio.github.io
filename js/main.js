@@ -681,40 +681,40 @@ $(function() {
 
 
 
-function sendMail(e){
-  e.preventDefault()
-  if(document.getElementById("name").value || document.getElementById("email").value || document.getElementById("message").value === "" ){
-    alert("kindly fill all the required fields")
-  }else{
-  var params = {
-        name:document.getElementById("name").value , 
-        email:document.getElementById("email").value ,
-        message:document.getElementById("message").value, 
-         };
+// function sendMail(e){
+//   e.preventDefault()
+//   if(document.getElementById("name").value || document.getElementById("email").value || document.getElementById("message").value === "" ){
+//     alert("kindly fill all the required fields")
+//   }else{
+//   var params = {
+//         name:document.getElementById("name").value , 
+//         email:document.getElementById("email").value ,
+//         message:document.getElementById("message").value, 
+//          };
 
 
 
-const serviceID = "service_fyato01"
-const templateID = "template_v4uron7"
+// const serviceID = "service_fyato01"
+// const templateID = "template_v4uron7"
 
 
 
-emailjs.send(serviceID,templateID,params)
-.then(
-    res =>{
-         document.getElementById("name").value="";
-         document.getElementById("email").value="";
-         document.getElementById("message").value="";
-         alert("Message sent successfully"); 
+// emailjs.send(serviceID,templateID,params)
+// .then(
+//     res =>{
+//          document.getElementById("name").value="";
+//          document.getElementById("email").value="";
+//          document.getElementById("message").value="";
+//          alert("Message sent successfully"); 
 
-}).catch((error) => console.log(error));
-}
-}
+// }).catch((error) => console.log(error));
+// }
+// }
 
 
 
 function scrollToBottotm (){
- const element = document.getElementById("random");
+ const element = document.getElementById("preloader");
 //  const element = document.getElementById("preloader");
 try {
   // element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
